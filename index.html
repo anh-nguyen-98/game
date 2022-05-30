@@ -1,0 +1,50 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="bar" style="position: relative; width: 1506;">
+        <div style="position: absolute; color: white; padding-left: 40px; padding-top: 10px;">
+            <div>
+                <span>Score</span>
+                <span id="playerScore">0</span>
+            </div>
+            <div style="margin-top: 10px">
+                <span>Lives </span><span id="playerLives">3</span>
+            </div>
+        </div>
+        <div style="position: absolute; color: white; right: 0; padding-right: 40px; padding-top: 10px;">
+            <div>
+                <span>Score</span>
+                <span id="enemyScore">0</span>
+            </div>
+            <div style="margin-top: 10px">
+                <span>Lives </span><span id="enemyLives">3</span>
+            </div>
+        </div>
+        
+        <div style="width:100%; position: absolute; display: flex; align-items: center; padding: 40px; height: 150px;">
+            <div style="position: relative; height: 30px; flex-grow: 1; border: 4px solid white; border-radius: 2px;" >
+                <div style="background-color: #340b8b; height: 100%; width: 100%;"></div>
+                <div id="playerBlood" style="position: absolute; background-color: red; top: 0; bottom: 0; right: 0; float: right; width: 100%;"></div>
+            </div>
+            <div id="timer" style="color: white; background-color: black; height: 50px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;  border: 4px solid white; border-radius: 2px;">0</div>
+            <div style="position: relative; height: 30px; flex-grow: 1; border: 4px solid white; border-radius: 2px;" >
+                <div style="background-color: #340b8b; height: 100%;"></div>
+                <div id="enemyBlood" style="position: absolute; background-color: red; top: 0; bottom: 0; left: 0; right: 0;"></div>
+            </div>
+
+
+
+        </div>
+        <div id="result" style="position: absolute; color: white; display: flex; align-items:center; justify-content: center; top: 0; bottom: 0; left:0;right: 0">
+        </div>
+        <canvas>
+        </canvas>
+    </div>
+    <script src="js/utilities.js"></script>
+    <script src="js/classes.js"></script>
+    <script src="index.js"></script>
+</body>
