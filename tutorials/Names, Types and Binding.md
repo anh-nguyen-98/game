@@ -1,6 +1,6 @@
 # Names, Types and Binding
 
-All the coding examples for this file can be found at [data-type.js](https://github.com/anh-nguyen-98/introduction-to-javascript/blob/main/data-type.js).
+All the coding examples for this file can be found at [data-type.js](https://raw.githubusercontent.com/anh-nguyen-98/game/main/tutorials/sample-codes/data-type.js).
 
 
 ## [Reserved key words](#reserved-key-words)
@@ -68,7 +68,7 @@ JavaScript has 39 reserved key words as of ECMA 2015.
 
 Please refer to [data-type.js](https://github.com/anh-nguyen-98/introduction-to-javascript/blob/main/data-type.js).
 
-These naming conventions are enforeced by standards in the community.
+These naming conventions are enforced by standards in the community.
 
 ## [Typing](#typing)
 
@@ -86,12 +86,14 @@ foo     = true;  // foo is now a boolean
 For example,
 
 ```javascript
-var total= 6.51;
+var total = 6.51;
 var message = "Your total is $";
 var deliver = message + total + ".";
 console.log(deliver) // output: "Your total is $6.51."
 
 ```
+
+In this example, `float` or `int` data types are implicitly converted to `String` in string concatenation. 
 
 - JavaScript is both implicitly typed and explicitly typed depending on the values.
 
@@ -105,74 +107,132 @@ console.log(deliver) // output: "Your total is $6.51."
     * BigInt
     * String
     * Symbol
+
+For example,
+```javascript
+// Boolean
+var isTested = true; 
+
+// Null
+var x = null;
+
+// Undefined
+var colorsArray = undefined;
+
+// Number
+var numInt = 42;
+var numFloat = 4.2;
+
+// BigInt
+var numBigInt = 2n ** 53n; // A BigInt is created by appending n to the end of an integer or by calling the constructor.
+
+
+// String
+var firstName = 'John';
+
+// Symbol
+let symbolStar = Symbol("Star");
+```
+
 - Objects define mutable values.
     * Date
     * Array
     * Set
     * Map
 
+For example,
+
+```javascript
+// Array
+const myFruits = ['Apple', 'Banana'];
+
+// Set
+const mySet = new Set()
+mySet.add(1)           // Set [ 1 ]
+mySet.add(5)           // Set [ 1, 5 ]
+
+// Map
+const myMap = new Map();
+myMap.set('a', 1); // Map {'a': 1}
+myMap.set('b', 2); // Map {'a': 1, 'b': 2}
+myMap.set('c', 3); // Map {'a': 1, 'b': 2, 'c': 3}
+```
+
 ## [Operators](#operators)
 
 ### [Assignment operators](#assignment-operators)
 
-- list operators
-- structuring & destructuring 
-- discourage chaining
-   - example
+|Name|Shorthand operator|Meaning|
+----|----|---|
+|Assignment|`x = f()`|`x = f()`|
+|Addition assignment|`x += f()`|`x = x + f()`|
+|Subtraction assignment|`x -= f()`|`x = x - f()`|
+|Multiplication assignment|`x *= f()`|`x = x * f()`|
+|Division assignment|`x /= f()`|`x = x / f()`|
+|Remainder assignment|`x %= f()`|`x = x % f()`|
+|Exponentiation assignment|`x **= f()`|`x = x ** f()`|
+|Left shift assignment|`x <<= f()`|`x = x << f()`|
+|Right shift assignment|`x >>= f()`|`x = x >> f()`|
+|Unsigned right shift assignment|`x >>>= f()`|`x = x >>> f()`|
+|Bitwise AND assignment|`x &= f()`|`x = x & f()`|
+|Bitwise XOR assignment|`x ^= f()`|`x = x ^ f()`|
+|Bitwise OR assignment|`x \|= f()`|`x = x \| f()`|
+|Logical AND assignment|`x &&= f()`|`x && (x = f())`|
+|Logical OR assignment|`x \|\|= f()`|`x \|\| (x = f())`|
+|Logical nullish assignment|`x ??= f()`|`x ?? (x = f())`|
+
 
 ### [Comparison operators](#comparison-operators)
-- list
-- pay attention to strict equal `===` vs. `==`
+|Operator|Description|Examples returning true|
+|---|---|----|
+|Equal (`==`)|	Returns true if the operands are equal.|`3 == var1`, `"3" == var1`, `3 == '3'`|
+|Not equal (`!=`)|	Returns true if the operands are not equal.|	var1 != 4, `var2 != "3"`|
+|Strict equal `(`===`)|	Returns true if the operands are equal and of the same type.|`3 === var1`|
+|Strict not equal (`!==`)|Returns true if the operands are of the same type but not equal, or are of different type.|	`var1 !== "3"`, `3 !== '3'`|
+|Greater than (`>`)|Returns true if the left operand is greater than the right operand.|`var2 > var1`, `"12" > 2`|
+|Greater than or equal (`>=`)|Returns true if the left operand is greater than or equal to the right operand.|`var2 >= var1`, `var1 >= 3`|
+|Less than (`<`)|	Returns true if the left operand is less than the right operand.|	`var1 < var2`,`"2" < 12`|
+|Less than or equal (`<=`)|Returns true if the left operand is less than or equal to the right operand.|`var1 <= var2`, `var2 <= 5`|
 
 ### [Arithmetic operators](#arithmetic-operators)
-- list
-- integer division or float devision?
-- division by 0 --> infinity
+- The standard arithmetic operators are addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`).
+- In addition, JavaScript provides other arithmetic operators remainder (`%`), increment (`++`), decrement (`--`).
+- JavaScript supports float devision.
 
-### [Bitwise operators](#bitwise-operators)
+For example,
+
+```javascript
+console.log (1/2) //output: 0.5
+console.log (1.0/2) //output: 0.5
+```
+- Division by zero produces Infinity.
 
 ### [Logical operators](#logical-operators)
+- JavaScript supports Logical operators AND (`&&`), OR (`||`), and NOT (`!`).
+- As logical expressions are evaluated left to right, they are tested for possible "short-circuit" evaluation using the following rules:
 
-- list
-- short-circuit
-
-### [String operator](#string-operator)
-
+   - `false && anything` is short-circuit evaluated to false.
+   - `true || anything` is short-circuit evaluated to true.
+   
 ### [Ternary (conditional) operator](#ternary-(-conditional-)-operator)
 
-### [Comma operator](#comma-operator)
+The conditional operator is the only JavaScript operator that takes three operands. The operator can have one of two values based on a condition. The syntax is:
 
-### [Unary operator](#unary-operator)
+```javascript
+condition ? val1 : val2
+```
+If condition is `true`, the operator has the value of `val1`. Otherwise it has the value of `val2`.
 
-- delete
-- typeof
-- void
+For example,
 
-### [Relational operator](#relational-operator)
+```javascript
+var age = 20;
+var status = (age >= 18) ? 'adult' : 'minor'; // value of status is 'adult'
+```
 
-- in 
-- in vs. of
+### Binding
 
-
-*6. Are mixed type operations allowed? If so, how are they accommodated?*
-
-*7. At what point are identifier names and operator symbols bound in your language? For example if you declare a (variable, class name, function name), when is it bound to the type, address? When are operators (+,*, etc.) bound to their operations?*
-
-https://topdev.vn/blog/5-quy-tac-binding-trong-javascript/ 
-
-*8. Describe the limitations (or lack thereof) of your programming language as they relate to the coding example portion of the assignment (adding ints and floats, storing different types in lists, converting between data types). Are there other restrictions or pitfalls that the documentation mentions that you need to be aware of?*
-
-https://hackernoon.com/work-with-javascript-arrays-like-a-boss-97207a042e42
-
-https://2ality.com/2012/02/js-pitfalls.html
-
-
-
-*9. Are there built-in complex data types that are commonly used in your language? (hint: they’d probably appear fairly early in the documentation if so)*
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#indexed_collections_arrays_and_typed_arrays
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+Since JavaScript is an interpreted language, all variables and operators are bound at run-time. In other words, JavaScript uses dynamic binding.
 
 ## [References](#references)
 
@@ -182,16 +242,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_gramma
 https://google.github.io/styleguide/jsguide.html#naming
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
-
-https://developer.mozilla.org/en-US/docs/Glossary/Symbol
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
