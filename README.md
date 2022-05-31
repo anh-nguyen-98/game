@@ -1,6 +1,6 @@
 # Programming Language Project
 
-This is an assignment from **CS308: Programming Language Project (PLP)** course, Spring 2022, Fulbright University Vietnam. This course is taught by Dr. Nanette Simenas. 
+This is an assignment from **CS308: Programming Languages** course, Spring 2022, Fulbright University Vietnam. This course is taught by Dr. Nanette Simenas. 
 
 The purpose of this assignment is to study one programming language of choice, and I choose is **JavaScript**.
 
