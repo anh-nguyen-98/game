@@ -2,3 +2,51 @@
     box-sizing: border-box;
     font-family: 'Press Start 2P', cursive;
 }
+
+.score-lives {
+    position: absolute; 
+    color: white; 
+    padding-top: 10px;
+}
+
+#result {
+    position: absolute; 
+    color: white; 
+    display: flex; 
+    align-items:center; 
+    justify-content: center; 
+    top: 0; 
+    bottom: 0; 
+    left:0;
+    right: 0;
+}
+
+#timer-blood-wrapper {
+    width:100%; 
+    position: absolute; 
+    display: flex; 
+    align-items: center; 
+    padding: 40px; 
+    height: 150px;
+}
+
+.blood-bar {
+    position: relative; 
+    height: 30px; 
+    flex-grow: 1; 
+    border: 4px solid white; 
+    border-radius: 2px;
+}
+
+#timer {
+    color: white; 
+    background-color: black; 
+    height: 50px; 
+    width: 100px; 
+    flex-shrink: 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+    border: 4px solid white; 
+    border-radius: 2px;
+}

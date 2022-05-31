@@ -5,46 +5,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="bar" style="position: relative; width: 1506;">
-        <div style="position: absolute; color: white; padding-left: 40px; padding-top: 10px;">
+    <div id="top-bar" style="position: relative; width: 1506;">
+        <div class="score-lives" style="padding-left: 40px;">
             <div>
                 <span>Score</span>
-                <span id="playerScore">0</span>
+                <span id="player1Score">0</span>
             </div>
             <div style="margin-top: 10px">
-                <span>Lives </span><span id="playerLives">3</span>
+                <span>Lives </span><span id="player1Lives">3</span>
             </div>
         </div>
-        <div style="position: absolute; color: white; right: 0; padding-right: 40px; padding-top: 10px;">
+        <div class="score-lives" style="right: 0; padding-right: 40px;">
             <div>
                 <span>Score</span>
-                <span id="enemyScore">0</span>
+                <span id="player2Score">0</span>
             </div>
             <div style="margin-top: 10px">
-                <span>Lives </span><span id="enemyLives">3</span>
+                <span>Lives </span><span id="player2Lives">3</span>
             </div>
         </div>
         
-        <div style="width:100%; position: absolute; display: flex; align-items: center; padding: 40px; height: 150px;">
-            <div style="position: relative; height: 30px; flex-grow: 1; border: 4px solid white; border-radius: 2px;" >
+        <div id="timer-blood-wrapper">
+            <div class="blood-bar" >
                 <div style="background-color: #340b8b; height: 100%; width: 100%;"></div>
-                <div id="playerBlood" style="position: absolute; background-color: red; top: 0; bottom: 0; right: 0; float: right; width: 100%;"></div>
+                <div id="player1Blood" style="position: absolute; background-color: red; top: 0; bottom: 0; right: 0; float: right; width: 100%;"></div>
             </div>
-            <div id="timer" style="color: white; background-color: black; height: 50px; width: 100px; flex-shrink: 0; display: flex; align-items: center; justify-content: center;  border: 4px solid white; border-radius: 2px;">0</div>
-            <div style="position: relative; height: 30px; flex-grow: 1; border: 4px solid white; border-radius: 2px;" >
+            <div id="timer">0</div>
+            <div class="blood-bar" >
                 <div style="background-color: #340b8b; height: 100%;"></div>
-                <div id="enemyBlood" style="position: absolute; background-color: red; top: 0; bottom: 0; left: 0; right: 0;"></div>
+                <div id="player2Blood" style="position: absolute; background-color: red; top: 0; bottom: 0; left: 0; right: 0;"></div>
             </div>
-
-
-
         </div>
-        <div id="result" style="position: absolute; color: white; display: flex; align-items:center; justify-content: center; top: 0; bottom: 0; left:0;right: 0">
+        <div id="result">
         </div>
         <canvas>
         </canvas>
     </div>
-    <script src="js/utilities.js"></script>
-    <script src="js/classes.js"></script>
+    <script src="utilities.js"></script>
+    <script src="classes.js"></script>
     <script src="index.js"></script>
 </body>
