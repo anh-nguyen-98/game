@@ -41,3 +41,22 @@ const myMap = new Map();
 myMap.set('a', 1); // Map {'a': 1}
 myMap.set('b', 2); // Map {'a': 1, 'b': 2}
 myMap.set('c', 3); // Map {'a': 1, 'b': 2, 'c': 3}
+
+
+let foo = 42;    // foo is now a number
+foo     = 'bar'; // foo is now a string
+foo     = true;  // foo is now a boolean
+
+var total = 6.51;
+var message = "Your total is $";
+var deliver = message + total + ".";
+console.log(deliver) // output: "Your total is $6.51."
+
+console.log (1/2) //output: 0.5
+console.log (1.0/2) //output: 0.5
+
+var age = 20;
+var status = (age >= 18) ? 'adult' : 'minor'; // value of status is 'adult'
+
+
+
