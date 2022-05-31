@@ -53,4 +53,4 @@ prof.teaches = "Science";
 prof.introduceSelf;
 
 studentC.introduceSelf();
-prof.instroduceSelf();
+prof.introduceSelf();
