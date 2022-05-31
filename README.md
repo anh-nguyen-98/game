@@ -6,7 +6,7 @@ The purpose of this assignment is to study one programming language of choice, a
 
 ## 1. Tutorials
 
-The tutorials can be found at `./tutorials` folder.
+The tutorials can be found at `.\tutorials` folder.
 
 The tutorials contain 5 sections:
 1. History and Hello World 
