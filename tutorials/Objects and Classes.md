@@ -1,6 +1,6 @@
 # Objects and Classes
 
-All thesa
+All the sample codes can be found at [object-class.js](https://raw.githubusercontent.com/anh-nguyen-98/game/main/tutorials/sample-codes/object-class.js)
 
 ## Objects
 
