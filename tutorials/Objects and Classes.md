@@ -39,7 +39,12 @@ var studentC = new Person("Anh");
 ```
 
 - Nearly all objects in JavaScript are prototype-based. They inherit properties and methods from `Object.prototype`. These properties may be overridden.
- 
+
+## Naming conventions
+
+- Names are case-sensitive, lowercase and uppercase are different.
+- Start class names with a capital letter, use `PascalCase` for names.
+- Use descriptive names, explaining the functionality of the class.
 
 ## Standard methods
 
