@@ -1,12 +1,44 @@
 # Objects and Classes
 
-## Object
+All thesa
 
-The `Object` class represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the `Object()` constructor or the object initializer / literal syntax.
+## Objects
 
-Nearly all objects in JavaScript are instances of `Object`; a typical object inherits properties and methods from `Object.prototype`, although these properties may be overridden.
+- JavaScript supports objects and classes. In fact, `Object` is one of JavaScript's data types. 
+- `Object` can be created using the `Object()` constructor, the object initializer / literal syntax, or from a user-defined class.
 
-Changes to the `Object prototype` object are seen by all objects through prototype chaining, unless the properties and methods subject to those changes are overridden further along the prototype chain. This provides a very powerful although potentially dangerous mechanism to override or extend object behavior.
+For example,
+
+```javascript
+// using Object() constructor
+var studentA = new Object();
+studentA.name = "Anh";
+
+// using object literal syntax
+
+var studentB = {
+  name: "Anh",
+  age: 18
+}
+
+// using a user-defined class
+class Person {
+
+  name;
+
+  constructor(name) {
+    this.name = name;
+  }
+
+  introduceSelf() {
+    console.log(`Hi! I'm ${this.name}`);
+  }
+
+}
+var studentC = new Person("Anh");
+```
+
+- Nearly all objects in JavaScript are prototype-based. They inherit properties and methods from `Object.prototype`. These properties may be overridden.
  
 
 ## Standard methods
@@ -42,21 +74,6 @@ Returns the primitive value of the specified object.
 
 ```javascript
 
-class Person {
-
-  name;
-
-  constructor(name) {
-    this.name = name;
-  }
-
-  introduceSelf() {
-    console.log(`Hi! I'm ${this.name}`);
-  }
-
-}
-
-
 class Professor extends Person {
 
   teaches;
@@ -76,6 +93,13 @@ class Professor extends Person {
   }
 
 }
+
+var prof = new Professor("Lan", "Math");
+prof.grade("190004-PLP");
+
+prof.teaches = "Science";
+
+prof.introduceSelf;
 ```
 
 
@@ -83,7 +107,14 @@ class Professor extends Person {
 
 * If a child class has the same method or property name as that of the parent class, it will use the method and property of the child class. 
 
-* Unlike the other programming languages, JavaScript Does not support function Overloading.
+For example
+
+```javascript
+studentC.introduceSelf();
+prof.instroduceSelf();
+```
+
+* Unlike the other programming languages, JavaScript does not support function overloading.
 
 
 ## References:
