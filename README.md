@@ -1,6 +1,9 @@
 # game
-Final project for Programming Language Course - FUV - Spring 2022
+Final project for Programming Language Course - FUV - Spring 2022.
+
 Instructor: Professor Nanette.
+
+Student: Nguyen Hoang Nam Anh - 190005.
 
 The project is a 2D fighting game between two players. For technical simplicity, the players will use the same keyboard to fight against each other in a game.
 
