@@ -2,16 +2,21 @@
 
 This is an assignment from **CS308: Programming Language Project (PLP)** course, Spring 2022, Fulbright University Vietnam. This course is taught by Dr. Nanette Simenas. 
 
-The purpose of this assignment is to study one programming language of choice. The language I choose is **JavaScript**, one of the most popular languages in today web development.
+The purpose of this assignment is to study one programming language of choice, and I choose is **JavaScript**.
 
-## Tutorials
+## 1. Tutorials
 
+The tutorials can be found at `./tutorials` folder.
+
+The tutorials contain 5 sections:
 1. History and Hello World 
-2. Names, types and bindings
-3. Selection control structures
+2. Names, Types and Bindings
+3. Selection Control Structures
+4. Loops and Subroutines
+5. Objects and Classes
 
 
-## Final project
+## 2. Final project
 
 Play the game at https://anh-nguyen-98.github.io/game/
 
@@ -26,5 +31,5 @@ During the game, each player is kept track of score, blood, and number of lives.
 Whenever one player gets attacked, their blood decreases, while the other player gets a score increase. Every time a player runs out of one blood bar, they lose one life. If one player loses three lives, the game is over and the other player wins.
 
 
-## Suggestions
+## 3. Feedback and Suggestions
 If you have any comments or suggestion, please feel free to reach me at [anh.nguyen.190005@student.fulbright.edu.vn](anh.nguyen.190005@student.fulbright.edu.vn) (Anh Nguyen).
