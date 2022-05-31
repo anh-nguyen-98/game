@@ -1,5 +1,6 @@
 # Loops and Subtoutines
 
+All the example codes can be found at [loop.js](https://raw.githubusercontent.com/anh-nguyen-98/game/main/tutorials/sample-codes/loop.js)
 ## LOOP
 
 ### `while`
