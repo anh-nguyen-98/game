@@ -1,6 +1,6 @@
 # Selection Control Structures
 
-All code samples for this file can be found at [selection-control.js](https://github.com/anh-nguyen-98/introduction-to-javascript/blob/main/selection-control.js).
+All code samples for this file can be found at [selection-control.js](https://raw.githubusercontent.com/anh-nguyen-98/game/main/tutorials/sample-codes/selection-control.js).
 
 ## [Boolean values](#boolean-values)
 
