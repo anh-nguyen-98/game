@@ -35,6 +35,18 @@ if (condition) {
 * If `condition` evaluates to `true`, `statement_1` is executed. Otherwise, `statement_2` is executed. 
 * `statement_1` and `statement_2` can be any statements.
 
+* For example,
+
+```javascript
+var x = 3;
+var y = 4;
+if (x == y) {
+  console.log("x is equal to y");
+} else {
+  console.log("x is not equal to y");
+}
+// expected output: x is not equal to y
+```
 
 #### [Multiple condition](#multiple-condition)
 * JavaScript also has the multiple condition syntax `if...else if...else`
@@ -49,6 +61,19 @@ if (condition_1) {
 } else {
   statement_last;
 }
+```
+
+For example
+
+```javascript
+if (x == y) {
+  console.log("x is equal to y");
+} else if (x < y) {
+  console.log("x is less than y");
+} else {
+  console.log("x is greater than y");
+}
+// expected output: x is less than y
 ```
 
 * Notice that only the first logical condition which evaluates to `true` will be executed.
@@ -82,6 +107,19 @@ true || anything is short-circuit evaluated to true.
 * `anything` part is not evaluated.
 * The Nullish coalescing operator (`??`) is used to return the second expression, when the first one is `null` or `undefined`. Otherwise, the first expression is returned. 
 
+
+For example
+
+```javascript
+const foo = null ?? 'default string';
+console.log(foo);
+// expected output: "default string"
+
+const baz = 0 ?? 42;
+console.log(baz);
+// expected output: 0
+
+```
 ## [Switch case](#switch-case)
 
 * A `switch` statement has the following syntax:
@@ -110,6 +148,61 @@ switch (expression) {
       * If `default` statement is found, then the program executes the statements associated with the `default`.
       * If no `default` statement is found, then the program continues execution at the statement following `switch`.
 
+For example
+
+```javascript
+// Switch-case with break
+var fruitType = "Bananas";
+
+switch (fruitType) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Apples':
+    console.log('Apples are $0.32 a pound.');
+    break;
+  case 'Bananas':
+    console.log('Bananas are $0.48 a pound.');
+    break;
+  case 'Cherries':
+    console.log('Cherries are $3.00 a pound.');
+    break;
+  case 'Mangoes':
+    console.log('Mangoes are $0.56 a pound.');
+    break;
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    break;
+  default:
+    console.log(`Sorry, we are out of ${fruitType}.`);
+}
+// expected output: Bananas are $0.48 a pound.
+
+// Switch-case without break
+switch (fruitType) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Apples':
+    console.log('Apples are $0.32 a pound.');
+    break;
+  case 'Bananas':
+    console.log('Bananas are $0.48 a pound.');
+    // break;
+  case 'Cherries':
+    console.log('Cherries are $3.00 a pound.');
+    break;
+  case 'Mangoes':
+    console.log('Mangoes are $0.56 a pound.');
+    break;
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    break;
+  default:
+    console.log(`Sorry, we are out of ${fruitType}.`);
+}
+// expected output: Bananas are $0.48 a pound. Cherries are $3.00 a pound.
+```
 ## [References](#references)
 
 * [Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
