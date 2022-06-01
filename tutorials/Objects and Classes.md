@@ -125,4 +125,5 @@ prof.instroduceSelf(); //  My name is Lan, and I will be your Science professor.
 ## References:
 
 [Classes in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript)
+
 [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
