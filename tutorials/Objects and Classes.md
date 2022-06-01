@@ -104,7 +104,7 @@ prof.grade("190004-PLP");
 
 prof.teaches = "Science";
 
-prof.introduceSelf;
+prof.introduceSelf; //output: My name is Lan, and I will be your Science professor.
 ```
 
 
@@ -115,8 +115,8 @@ prof.introduceSelf;
 For example
 
 ```javascript
-studentC.introduceSelf();
-prof.instroduceSelf();
+studentC.introduceSelf(); // Hi, I'm Anh.
+prof.instroduceSelf(); //  My name is Lan, and I will be your Science professor.
 ```
 
 * Unlike the other programming languages, JavaScript does not support function overloading.
